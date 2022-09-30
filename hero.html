@@ -16,6 +16,10 @@
 <link rel="stylesheet" href="assets/plugins/morris/morris.css">
 
 <link rel="stylesheet" href="assets/css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -24,10 +28,10 @@
 <div class="header">
 
 <div class="header-left">
-<a href="index.html" class="logo">
-<img src="assets/img/logo.png" alt="Logo">
+<a href="hero.html" class="logo">
+<h1 style="margin-top: 20px; font-family:'quicksand'; color: #680a83; font-weight: 800;">Admin</h1>
 </a>
-<a href="index.html" class="logo logo-small">
+<a href="hero.html" class="logo logo-small">
 <img src="assets/img/logo-small.png" alt="Logo" width="30" height="30">
 </a>
 </div>
@@ -153,79 +157,19 @@
 <li class="menu-title">
 </li>
 <li>
-<a href="index.html"><i class="fe fe-home"></i> <span>Dashboard</span></a>
-</li>
+
 <li class="submenu">
-<a href="#"><i class="fe fe-users"></i> <span> Users</span> <span class="menu-arrow"></span></a>
+<a href="#"><i class="fe fe-users"></i> <span style="color: #680a83;;"> Tambah Data</span> <span class="menu-arrow"></span></a>
 <ul style="display: none;">
-<li><a href="users.html">Users</a></li>
-<li><a href="blocked-users.html">Blocked User</a></li>
-<li><a href="report-users.html" class="active">Report User</a></li>
+<li><a href="hero.html" class="active" style="color: #ffff; font-family: 'quicksand'; font-weight: 800; background-color: #680a83; border-radius: 0px 50px 50px 0px;">Hero</a></li>
+<li><a href="best.html">Best</a></li>
+<li><a href="recommendation.html">Recommendation</a></li>
+<li><a href="faq.html">FAQ</a></li>
 </ul>
 </li>
-<li class="submenu">
-<a href="#"><i class="fe fe-sync"></i> <span> History </span> <span class="menu-arrow"></span></a>
-<ul style="display: none;">
-<li><a href="call-history.html"> Call History </a></li>
-<li><a href="group-history.html"> Group History </a></li>
-</ul>
-</li>
-<li class="submenu">
-<a href="#"><i class="fe fe-gear"></i> <span> Settings </span> <span class="menu-arrow"></span></a>
-<ul style="display: none;">
-<li><a href="general.html">General</a></li>
-<li><a href="admob.html">Admob </a></li>
-<li><a href="sinch-settings.html">Sinch Settings </a></li>
-<li><a href="firebase-settings.html">Firebase Settings </a></li>
-</ul>
-</li>
-<li>
-<a href="blank-page.html"><i class="fe fe-file"></i> <span>Blank Page</span></a>
-</li>
-<li>
-<a href="vector-maps.html"><i class="fe fe-map"></i> <span>Vector Maps</span></a>
-</li>
-<li>
- <a href="components.html"><i class="fe fe-vector"></i> <span>Components</span></a>
-</li>
-<li class="submenu">
-<a href="#"><i class="fe fe-layout"></i> <span> Forms <span class="menu-arrow"></span></span></a>
-<ul style="display: none;">
-<li><a href="form-basic-inputs.html">Basic Inputs</a></li>
-<li><a href="form-input-groups.html">Input Groups</a></li>
-<li><a href="form-horizontal.html">Horizontal Form</a></li>
-<li><a href="form-vertical.html">Vertical Form </a></li>
-<li><a href="form-mask.html">Form Mask</a></li>
-<li><a href="form-validation.html">Form Validation </a></li>
-</ul>
-</li>
-<li class="submenu">
-<a href="#"><i class="fe fe-table"></i> <span> Tables <span class="menu-arrow"></span></span></a>
-<ul style="display: none;">
-<li><a href="tables-basic.html">Basic Tables </a></li>
-<li><a href="data-tables.html">Data Table </a></li>
-</ul>
-</li>
-<li class="submenu">
-<a href="javascript:void(0);"><i class="fe fe-code"></i> <span>Multi Level</span> <span class="menu-arrow"></span></a>
-<ul style="display: none;">
-<li class="submenu">
-<a href="javascript:void(0);"> <span>Level 1</span> <span class="menu-arrow"></span></a>
-<ul style="display: none;">
-<li><a href="javascript:void(0);"><span>Level 2</span></a></li>
-<li class="submenu">
-<a href="javascript:void(0);"> <span> Level 2</span> <span class="menu-arrow"></span></a>
-<ul style="display: none;">
-<li><a href="javascript:void(0);">Level 3</a></li>
-<li><a href="javascript:void(0);">Level 3</a></li>
-</ul>
-</li>
-<li><a href="javascript:void(0);"> <span>Level 2</span></a></li>
-</ul>
-</li>
-<li>
-<a href="javascript:void(0);"> <span>Level 1</span></a>
-</li>
+
+
+
 </ul>
 </li>
 </ul>
@@ -239,10 +183,10 @@
 <div class="page-header">
 <div class="row align-items-center">
 <div class="col">
-<h3 class="page-title">Report User</h3>
+<h3 class="page-title">Hero</h3>
 <ul class="breadcrumb">
 <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-<li class="breadcrumb-item active">Report User</li>
+<li class="breadcrumb-item active">Hero Landing Page</li>
 </ul>
 </div>
 </div>
@@ -256,11 +200,11 @@
 <table class="table table-hover table-center mb-0">
 <thead>
 <tr>
-<th>User</th>
-<th>Report Date</th>
-<th>Report time</th>
-<th>Report Message</th>
-<th>Report Document</th>
+<th>Name</th>
+<th>Registered date</th>
+<th>Login time</th>
+<th>Logout time</th>
+<th>Last login</th>
 <th class="text-end">Action</th>
 </tr>
 </thead>
@@ -268,55 +212,43 @@
 <tr>
 <td>
 <h2 class="table-avatar">
-<a href="general.html" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-24.jpg" alt="User Image"></a>
-<a href="general.html">Eric Knight <span>#0009</span></a>
+<a href="general.html" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-03.jpg" alt="User Image"></a>
+<a href="general.html">John Lee <span>#0001</span></a>
 </h2>
 </td>
 <td>01 Oct 2019</td>
 <td>01.00 PM</td>
-<td>They claim a charge</td>
-<td>
-<div class="actions">
-<a href="#" class="btn btn-sm bg-success-light me-2" title="View Document">
-<i class="fe fe-eye"></i>
-</a>
-</div>
-</td>
+<td>03.54 PM</td>
+<td>11.00 PM</td>
 <td class="text-end">
 <div class="actions">
- <a href="#" class="btn btn-sm bg-success-light me-2" title="Accepted">
-<i class="fe fe-check"></i>
+<a href="#" class="btn btn-sm bg-success-light me-2">
+<i class="fe fe-pencil"></i>
 </a>
-<a href="#" class="btn btn-sm bg-danger-light" title="Declined">
-<i class="fe fe-close"></i>
-</a>
+<a href="#" class="btn btn-sm bg-danger-light">
+<i class="fe fe-trash"></i>
+ </a>
 </div>
 </td>
 </tr>
 <tr>
 <td>
 <h2 class="table-avatar">
-<a href="general.html" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-20.jpg" alt="User Image"></a>
-<a href="general.html">Francis<span>#0007</span></a>
+<a href="general.html" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-04.jpg" alt="User Image"></a>
+<a href="general.html">Joe <span>#0002</span></a>
 </h2>
 </td>
 <td>23 Jan 2020</td>
 <td>10.00 AM</td>
-<td>Lorem ipsum dolor</td>
-<td>
-<div class="actions">
-<a href="#" class="btn btn-sm bg-success-light me-2" title="View Document">
-<i class="fe fe-eye"></i>
-</a>
-</div>
-</td>
+<td>03.12 PM</td>
+<td>10.00 AM</td>
 <td class="text-end">
 <div class="actions">
-<a href="#" class="btn btn-sm bg-success-light me-2" title="Accepted">
-<i class="fe fe-check"></i>
+<a href="#" class="btn btn-sm bg-success-light me-2">
+<i class="fe fe-pencil"></i>
 </a>
-<a href="#" class="btn btn-sm bg-danger-light" title="Declined">
-<i class="fe fe-close"></i>
+<a href="#" class="btn btn-sm bg-danger-light">
+<i class="fe fe-trash"></i>
 </a>
 </div>
 </td>
@@ -324,27 +256,21 @@
 <tr>
 <td>
 <h2 class="table-avatar">
-<a href="general.html" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-22.jpg" alt="User Image"></a>
+<a href="general.html" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-05.jpg" alt="User Image"></a>
 <a href="general.html">Mary Wiley <span>#0003</span></a>
 </h2>
 </td>
 <td>14 Feb 2020</td>
 <td>12.03 PM</td>
-<td>Donec posuere dictum</td>
-<td>
-<div class="actions">
-<a href="#" class="btn btn-sm bg-success-light me-2" title="View Document">
-<i class="fe fe-eye"></i>
-</a>
-</div>
-</td>
+<td>11.40 PM</td>
+<td>10.00 AM</td>
 <td class="text-end">
 <div class="actions">
-<a href="#" class="btn btn-sm bg-success-light me-2" title="Accepted">
-<i class="fe fe-check"></i>
+<a href="#" class="btn btn-sm bg-success-light me-2">
+<i class="fe fe-pencil"></i>
 </a>
-<a href="#" class="btn btn-sm bg-danger-light" title="Declined">
-<i class="fe fe-close"></i>
+<a href="#" class="btn btn-sm bg-danger-light">
+<i class="fe fe-trash"></i>
 </a>
 </div>
 </td>
@@ -352,27 +278,21 @@
 <tr>
 <td>
 <h2 class="table-avatar">
-<a href="general.html" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-01.jpg" alt="User Image"></a>
+<a href="general.html" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-06.jpg" alt="User Image"></a>
 <a href="general.html">Amy Bond <span>#0004</span></a>
 </h2>
 </td>
 <td>18 Apr 2020</td>
 <td>09.10 AM</td>
-<td>Lorem ipsum dolor donec</td>
-<td>
-<div class="actions">
-<a href="#" class="btn btn-sm bg-success-light me-2" title="View Document">
-<i class="fe fe-eye"></i>
-</a>
-</div>
-</td>
+<td>05.30 PM</td>
+<td>06.00 PM</td>
 <td class="text-end">
 <div class="actions">
-<a href="#" class="btn btn-sm bg-success-light me-2" title="Accepted">
-<i class="fe fe-check"></i>
+<a href="#" class="btn btn-sm bg-success-light me-2">
+<i class="fe fe-pencil"></i>
 </a>
-<a href="#" class="btn btn-sm bg-danger-light" title="Declined">
-<i class="fe fe-close"></i>
+<a href="#" class="btn btn-sm bg-danger-light">
+<i class="fe fe-trash"></i>
 </a>
 </div>
 </td>
@@ -380,27 +300,43 @@
 <tr>
 <td>
 <h2 class="table-avatar">
-<a href="general.html" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-23.jpg" alt="User Image"></a>
- <a href="general.html">Clara Brady <span>#0005</span></a>
+<a href="general.html" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-07.jpg" alt="User Image"></a>
+<a href="general.html">Clara Brady <span>#0005</span></a>
 </h2>
 </td>
 <td>20 Apr 2020</td>
 <td>01.00 PM</td>
-<td>Lorem ipsum Sed sollicitudin</td>
-<td>
+<td>09.54 PM</td>
+<td>08.00 AM</td>
+<td class="text-end">
 <div class="actions">
-<a href="#" class="btn btn-sm bg-success-light me-2" title="View Document">
-<i class="fe fe-eye"></i>
+<a href="#" class="btn btn-sm bg-success-light me-2">
+<i class="fe fe-pencil"></i>
+</a>
+<a href="#" class="btn btn-sm bg-danger-light">
+<i class="fe fe-trash"></i>
 </a>
 </div>
 </td>
+</tr>
+<tr>
+<td>
+<h2 class="table-avatar">
+<a href="general.html" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-08.jpg" alt="User Image"></a>
+<a href="general.html">Robert Martin <span>#0006</span></a>
+</h2>
+</td>
+<td>08 Jun 2020</td>
+<td>10.00 AM</td>
+<td>07.00 PM</td>
+<td>10.00 AM</td>
 <td class="text-end">
 <div class="actions">
-<a href="#" class="btn btn-sm bg-success-light me-2" title="Accepted">
-<i class="fe fe-check"></i>
+<a href="#" class="btn btn-sm bg-success-light me-2">
+<i class="fe fe-pencil"></i>
 </a>
-<a href="#" class="btn btn-sm bg-danger-light" title="Declined">
-<i class="fe fe-close"></i>
+<a href="#" class="btn btn-sm bg-danger-light">
+<i class="fe fe-trash"></i>
 </a>
 </div>
 </td>
