@@ -40,8 +40,6 @@
 <i class="fe fe-text-align-left"></i>
 </a>
 <div class="top-nav-search">
-<form>
-</form>
 </div>
 
 <a class="mobile_btn" id="mobile_btn">
@@ -121,24 +119,8 @@
 </div>
 </li>
 
-
-
 </a>
-<div class="dropdown-menu">
-<div class="user-header">
-<div class="avatar avatar-sm">
-<img src="assets/img/profiles/avatar-01.jpg" alt="User Image" class="avatar-img rounded-circle">
-</div>
-<div class="user-text">
-<h6>Seema Sisty</h6>
-<p class="text-muted mb-0">Administrator</p>
-</div>
-</div>
-<a class="dropdown-item" href="general.html">My Profile</a>
-<a class="dropdown-item" href="general.html">Account Settings</a>
-<a class="dropdown-item" href="login.html">Logout</a>
-</div>
-</li>
+
 
 </ul>
 
@@ -151,12 +133,14 @@
 <ul>
 <li class="menu-title">
 </li>
+<li>
+</li>
 <li class="submenu">
 <a href="#"><i class="fe fe-users"></i> <span style="color: #680a83;;"> Tambah Data</span> <span class="menu-arrow"></span></a>
 <ul style="display: none;">
     <li><a href="hero.html" class="active">Hero</a></li>
-    <li><a href="best.html">Best Seller</a></li>
-    <li><a href="recommendation.html" style="color: #ffff; font-family: 'quicksand'; font-weight: 800; background-color: #680a83; border-radius: 0px 50px 50px 0px;">Recommendation</a></li>
+    <li><a href="best.html" style="color: black;">Best Seller</a></li>
+    <li><a href="recommendation.html">Recommendation</a></li>
     <li><a href="faq.html">FAQ</a></li>
 </ul>
 </li>
@@ -171,54 +155,66 @@
     <div class="page-header">
     <div class="row align-items-center">
     <div class="col">
-    <h3 class="page-title">Recommendation</h3>
-    <ul class="breadcrumb">
-    <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-    <li class="breadcrumb-item active">Recommendation Product</li>
-    <li><a href="tambah-data-recommendation.html" style="margin-left: 900px; color: #680a83;">Tambah Data +</a></li>
     </ul>
     </div>
     </div>
     </div>
     <div class="row">
     <div class="col-md-12 d-flex">
-    
-    <div class="card card-table flex-fill">
-    <div class="card-body">
-    <div class="table-responsive">
-    <table class="table table-hover table-center mb-0">
-    <thead>
-    <tr>
-    <th>Id</th>
-    <th>Gambar</th>
-    <th>Nama</th>
-    <th>Harga Awal</th>
-    <th>Harga Diskon</th>
-    <th class="text-end">Action</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td>001</td>
-    <td><a href="general.html" class="avatar avatar-sm me-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-03.jpg" alt="User Image"></a></td>
-    <td>
-    <h2 class="table-avatar">
-    <a href="general.html">John Lee</a>
-    </h2>
-    </td>
-    <td>01 Oct 2019</td>
-    <td>01.00 PM</td>
-    <td class="text-end">
-    <div class="actions">
-    <a href="form-edit-recommendation.html" class="btn btn-sm bg-success-light me-2">
-    <i class="fe fe-pencil"></i>
-    </a>
-    <a href="#" class="btn btn-sm bg-danger-light">
-    <i class="fe fe-trash"></i>
-     </a>
-    </div>
-    </td>
-    </tr>
+        <div class="content container-fluid">
+
+            <div class="page-header">
+            <div class="row">
+            <div class="col-sm-12">
+            <h3 class="page-title">Tambah Data Best Seller</h3>
+            <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+            <li class="breadcrumb-item active">Tambah Data Best Seller</li>
+            </ul>
+            </div>
+            </div>
+            </div>
+            
+            <div class="row">
+            <div class="col-sm-12">
+            <div class="card">
+            <div class="card-header">
+            <h4 class="card-title">Tambah Data</h4>
+            </div>
+            <div class="card-body">
+            <form action="#">
+            <div class="form-group row">
+            <label class="col-form-label col-md-2">Id</label>
+            <div class="col-md-10">
+            <input type="text" class="form-control">
+            </div>
+            </div>
+            <div class="form-group row">
+            <label class="col-form-label col-md-2">Nama</label>
+            <div class="col-md-10">
+            <input type="text" class="form-control">
+            </div>
+            </div>
+            <div class="form-group row">
+            <label class="col-form-label col-md-2">Harga</label>
+            <div class="col-md-10">
+            <input type="text" class="form-control">
+            </div>
+            </div>
+            <div class="form-group row">
+            <label class="col-form-label col-md-2">Deskripsi</label>
+            <div class="col-md-10">
+            <input type="text" class="form-control">
+            </div>
+            </div>
+            <div class="form-group row">
+            <label class="col-form-label col-md-2">Gambar</label>
+            <div class="col-md-10">
+            <input class="form-control" type="file">
+            </div>
+            <button type="submit" style="width:200px; height: 40px; border: none; margin: auto; margin-top: 40px; color: white; background-color: #680a83; border-radius: 20px; font-family: 'quicksand'; font-weight: 800;">Submit</button>
+            </div>
+            </form>
     </div>
     </td>
     </tr>
@@ -228,6 +224,12 @@
     </div>
     </div>
     
+</div>
+</div>
+</div>
+</div>
+
+</div>
 
 
 <script src="assets/js/jquery-3.6.0.min.js"></script>
